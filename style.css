@@ -1,0 +1,241 @@
+html, body {
+    margin: 0vh;
+    padding: 0vh;
+}
+
+#contentBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#nav {
+    background-color: black;
+    height: 7vh;
+    width: 4vw;
+    right: 5vw;
+    top: 5vh;
+    position: fixed;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+#nav a {
+    visibility: hidden;
+    color: whitesmoke;
+    display: block;
+    text-decoration: none;
+    line-height: 3.5em;
+}
+
+#nav:hover a{
+    visibility: visible;
+}
+
+#nav a:hover {
+    opacity: 0.75;
+}
+
+#nav a:active {
+    text-decoration: underline;
+}
+
+#nav:hover {
+    width: 15vw;
+    height: 40vh;
+}
+
+.bar {
+    box-sizing: border-box;
+    position: relative;
+    height: 0.2vh;
+    width: 2vw;
+    background-color: whitesmoke;
+    opacity: 1;
+    margin-top: 0.7em;
+    left: 1vw;
+}
+
+#nav:hover .bar {
+    visibility: hidden;
+}
+
+#topTitle, #bottomTitle {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 5em;
+    text-align: center;
+    letter-spacing: 0.2em;
+    padding: 2%;
+}
+
+
+
+#issuePages {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#footer {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding: 1.2%;
+    background-color: black;
+    color:whitesmoke;
+}
+
+.pages {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 70vh;
+    font-family: 'Open Sans', sans-serif;
+    /* align-items: flex-end; */
+    justify-content: space-between;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.25);
+    
+}
+
+.pageDescription {
+    box-sizing: border-box;
+    display: block;
+    background-color: whitesmoke;
+    opacity: 0;
+    color: black;
+    width: 70%;
+    align-self: center;
+    margin-top: 5em;
+    font-size: 1.2em;
+    line-height: 2em;
+    padding: 2%;
+}
+
+.pages:hover .pageDescription {
+    opacity: 0.8;
+}
+.pages:hover .pageTitle{
+    font-size: 1.4em;
+}
+
+.pageTitle {
+    /* width: 100%; */
+    background-color: black;
+    color: whitesmoke;
+    /* height: 10%; */
+    padding: 5%;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    /* align-self: flex-start; */
+}
+
+#content1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5vh;
+    /* width: 100vw; */
+    /* height: 60vh; */
+    /* background-color: darkkhaki; */
+    /* margin-top: 15vh; */
+}
+
+#content2 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* height: 60vh; */
+    /* background-color: teal; */
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+
+}
+
+#doubleImage {
+    box-sizing: border-box;
+    position: relative;
+    /* background-color: chartreuse; */
+    width: 20vw;
+    height: 100%;
+    margin-bottom: -2em;
+
+}
+
+
+#pic1 {
+    width: 20vw;
+    height: 40vh;
+    object-fit: cover;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+    
+}
+
+#pic2 {
+    box-sizing: border-box;
+    position: relative;
+    left: 10vw;
+    bottom: 12vh;
+    width: 20vw;
+    height: 40vh;
+    object-fit: cover;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+    
+}
+
+#content2 #doubleImage #pic2 {
+    left: -10vw;
+}
+
+.bigImage {
+    width: 30vw;
+    height: 70vh;
+    object-fit: cover;
+    box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+#leftTxt {
+    margin-top: 2.2em;
+    font-family: 'Open Sans', sans-serif;
+    width: 50vw;
+    height: 100%;
+    display: inline-block;
+    line-height: 2.5em;
+    font-size: 1.3em;
+}
+
+#rightTxt {
+    margin-top: 2.2em;
+    font-family: 'Open Sans', sans-serif;
+    width: 50vw;
+    height: 100%;
+    display: inline-block;
+    line-height: 2.5em;
+    font-size: 1.3em;
+    text-align: right;
+}
+
+.centerTxt {
+    /* margin-top: 1em; */
+    font-family: 'Open Sans', sans-serif;
+    width: 50vw;
+    height: 100%;
+    display: inline-block;
+    line-height: 2.5em;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+a {
+    color: black;
+    text-align: center;
+}
+
+a:hover {
+    color: rgb(117, 111, 111);
+}
