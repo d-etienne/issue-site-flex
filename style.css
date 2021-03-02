@@ -1,12 +1,14 @@
 html, body {
     margin: 0vh;
     padding: 0vh;
+
 }
 
 #contentBox {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 100vw;
 }
 
 #nav {
@@ -73,6 +75,7 @@ html, body {
 #issuePages {
     display: flex;
     justify-content: space-evenly;
+    height: 90vh;
     
 }
 
@@ -88,13 +91,9 @@ html, body {
 
 .pages {
     background-color: aquamarine;
-    display: flex;
-    flex-direction: column;
     width: 30%;
-    height: 70vh;
+    height: 100%;
     font-family: 'Open Sans', sans-serif;
-    /* align-items: flex-end; */
-    justify-content: space-between;
     text-decoration: none;
     text-align: center;
     box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.25);
@@ -103,13 +102,14 @@ html, body {
 
 .pageDescription {
     box-sizing: border-box;
-    display: block;
+    position: relative;
     background-color: whitesmoke;
     opacity: 0;
     color: black;
     width: 70%;
+    height: 30vw;
     align-self: center;
-    margin-top: 5em;
+    margin: 5em;
     font-size: 1.2em;
     line-height: 2em;
     padding: 2%;
@@ -122,15 +122,13 @@ html, body {
     font-size: 1.4em;
 }
 
-.pageTitle {
-    /* width: 100%; */
+.pages .pageTitle {
+    position: relative;
     background-color: black;
     color: whitesmoke;
-    /* height: 10%; */
     padding: 5%;
     font-size: 1.2em;
     letter-spacing: 0.2em;
-    /* align-self: flex-start; */
 }
 
 #content1 {
@@ -139,10 +137,7 @@ html, body {
     flex-direction: row;
     justify-content: space-around;
     margin-top: 5vh;
-    /* width: 100vw; */
-    /* height: 60vh; */
-    /* background-color: darkkhaki; */
-    /* margin-top: 15vh; */
+   
 }
 
 #content2 {
@@ -150,17 +145,34 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* height: 60vh; */
-    /* background-color: teal; */
     margin-top: 20vh;
     margin-bottom: 10vh;
 
 }
 
+.pages #imgW, #imgSC, #imgS {
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    background-size: cover;
+    background-position:center;
+}
+
+#imgW {
+    background-image: url("images/whitewashingHome.webp");
+}
+
+#imgS {
+    background-image: url("images/stereotypes2.jpg");
+}
+
+#imgSC {
+    background-image: url("images/cluelessHome.jpeg");
+}
+
 #doubleImage {
     box-sizing: border-box;
     position: relative;
-    /* background-color: chartreuse; */
     width: 20vw;
     height: 100%;
     margin-bottom: -2em;
@@ -221,7 +233,6 @@ html, body {
 }
 
 .centerTxt {
-    /* margin-top: 1em; */
     font-family: 'Open Sans', sans-serif;
     width: 50vw;
     height: 100%;
